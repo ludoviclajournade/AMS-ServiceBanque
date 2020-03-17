@@ -1,0 +1,20 @@
+
+# Reglage serveur
+server:
+  port: 10001
+# nom appli
+spring:
+  application:
+    name: m2-ams-spring-banque
+  # Configuration BD 1
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: root
+      database: amsdb
+      port: 27017
+      host: localhost
+      uri: mongodb://root:root@localhost:27017/amsdb
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
